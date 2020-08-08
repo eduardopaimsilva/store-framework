@@ -5,7 +5,10 @@
       "info-card#button-right",
       "info-card#button-left",
       "shelf",
-      "slider-layout#home"
+      "slider-layout#home",
+      "responsive-layout",
+      "responsive-layout.desktop#desktop",
+      "rich-text#mobile"
     ]
   },
   "info-card#button-right": {
@@ -68,35 +71,53 @@
       "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
       "maxWidth": "100%"
     }
-  },
-     "slider-layout#home": {
-      "children": ["info-card#1", "info-card#2"],
-      "props": {
-        "autoplay": {
-          "timeout": 5000,
-          "stopOnHover": false
-        }
-      }
-    },
-    
-    "info-card#1": {
-      "props": {
-        "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        "isFullModeStyle": true,
-        "headline": "Black Friday",
-        "callToActionText": "Subscribe",
-        "textPosition": "center"
-      }
-    },
-    
-    "info-card#2": {
-      "props": {
-        "imageUrl": "https://images.unsplash.com/photo-1524185962737-ea7c028a12cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        "isFullModeStyle": true,
-        "headline": "Black Friday",
-        "callToActionText": "Subscribe",
-        "textPosition": "center"
-      }
-    }
-    }
 
+
+  },
+  "responsive-layout.desktop#desktop": {
+    "children": [
+      "rich-text#desktop",
+      "image#desktop"
+    ]
+  },
+  "responsive-layout.mobile#mobile": {
+    "children": [
+      "rich-text#mobile",
+      "image#mobile"
+    ]
+  },
+  "rich-text#desktop": {
+    "props": {
+      "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#mobile": {
+    "props": {
+      "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "image#desktop": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Desktop.jpg?q=1",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      },
+      "alt": "Coffee Makers Collection",
+      "maxWidth": "100%"
+    }
+  },
+  "image#mobile": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      },
+      "alt": "Coffee Makers Collection",
+      "maxWidth": "100%"
+    }
+  }
+}
