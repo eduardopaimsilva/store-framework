@@ -20,6 +20,18 @@
       "stack-layout#brand"
     ]
   },
+  "stack-layout#brand": {
+    "children": [
+      "product-images",
+      "product-brand"
+    ]
+  },
+  "product-brand": {
+    "props": {
+      "displayMode": "logo",
+      "height": 30
+    }
+  },
   "flex-layout.col#right": {
     "props": {
       "verticalAlign": "middle",
@@ -33,13 +45,13 @@
       "shipping-simulator",
       "buy-button"
     ]
-  },
+  }, 
   "flex-layout.row#qty-sku": {
     "children": [
       "sku-selector",
       "product-quantity"
     ]
-  }, 
+  },
   "product-price": {
     "props": {
       "showSavings": true,
