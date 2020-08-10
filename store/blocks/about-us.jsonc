@@ -93,10 +93,13 @@
       }
   },
   "iframe": {
-    "props": {
-        "src": "https://www.instagram.com/p/B973Qp8BacC/embed",
-        "width": 800,
-        "height": 1000
-    }
-}
+      "props": {
+          "text": "Instagram",
+          "textPosition": "CENTER",
+          "font": "t-heading-3",
+          "src": "https://www.instagram.com/p/B973Qp8BacC/embed",
+            "width": 800,
+            "height": 1000
+      }
+  }
 }
